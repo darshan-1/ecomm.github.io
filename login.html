@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to GreenHunch Community</title>
+    <link rel="stylesheet" href="registration.css">
+    <script src="login.js"></script>
+    <script src="disable.js"></script>
+    <style>
+        img {
+            position: absolute;
+            height: 100px;
+            width: 200px;
+            right: 25%;
+            bottom: 68%;
+
+
+        }
+    </style>
+</head>
+
+<body oncontextmenu="return false">
+    <div>
+        <a href="login.html"><img
+                src="https://api.freelogodesign.org/files/255403f5a77c4f90bc3b2aca86cf706d/thumb/logo_200x200.png?v=0"
+                alt="GreenHunch LOGO."></a>
+
+    </div>
+
+    <div id="main">
+        <div class="h-tag">
+            <h2>Welcome to GreenHunch Community</h2>
+            <a href="index.html">Go to home page</a>
+        </div>
+        <div class="text">
+            <div class="login">
+                <table cellspacing="2" align="center" cellpadding="8" border="0">
+
+                    <tr>
+                        <td align="right">Enter Email ID :</td>
+                        <td><input type="text" placeholder="emailID" id="useremail" class="tb" />
+                            <div> <small id="error_reg_mailinvalid" class="text-dark mt-3 "></small></div>
+                            <div> <small id="error_reg_mailempty" class="text-dark mt-3 "></small></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">Enter Password :</td>
+                        <td><input type="password" placeholder="Password" id="userpassword" class="tb" />
+                            <div> <small id="error_reg_pwdempty" class="text-dark mt-3 "></small></div>
+                            <div> <small id="error_reg_pwdinvalid" class="text-dark mt-3 "></small></div>
+                            <div> <small id="error_reg_pwdmaxlength" class="text-dark mt-3 "></small></div>
+                            <div> <small id="error_reg_pwdminlength" class="text-dark mt-3 "></small></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="submit" value="Register" onclick="user_register()" id="res"
+                                class="btn" />
+                            <input type="submit" value="Log In" class="btn" onclick="loginuser()" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
